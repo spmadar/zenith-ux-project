@@ -1,4 +1,7 @@
 /*Base styles*/
+html {
+    width:100%;
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -22,6 +25,7 @@ p, a, input, button {
 h1,h2,h3 {
     font-family: 'Futura Heavy';
 }
+
 h2 {
     font-size: 24px;
     margin-bottom: 70px;
@@ -30,6 +34,15 @@ h2 {
     background: -webkit-linear-gradient(#5f37ff, #434cff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+h3 {
+    letter-spacing: 1px;
+    font-size: 24px;
+    color:#fff;
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 40px;
+
 }
 @font-face {
     font-family: 'Futura Book';
@@ -57,6 +70,7 @@ h2 {
     padding-top: 50px;
 }
 .hero {
+
     background-image: url('./assets/images/backgrounds/hero-bg-texture.png');
     display: flex;
     flex-flow: column nowrap;
@@ -64,12 +78,36 @@ h2 {
     margin-bottom: 350px;
 }
 .features {
+    width: 100%;
+    background-color: #fff;
     margin-bottom: 100px;
-
-    max-width: 100%;
+    display: flex;
     flex-flow: column wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+.interface {
+    width: 90%;
+    height: 250px;
+    margin-bottom: 200px;
+}
+.products {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.contact {
+    background: rgb(41,94,255);
+    background: linear-gradient(11deg, rgba(41,94,255,1) 0%, rgb(114, 69, 198) 100%);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: center;
+    z-index: 3;
 }
 /*Block styles*/
 .nav__logo-wrapper {
@@ -83,7 +121,7 @@ h2 {
 }
 .nav__hamburger-wrapper {
     margin-left: 40px;
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -98,7 +136,7 @@ h2 {
 }
 .nav__hamburger-icon:nth-child(2) {
     width: 35px;
-    margin-top: -10px;
+    margin-top: -5px;
 }
 .hero__summary {
     margin: 100px 0px 70px 0px;
@@ -106,17 +144,21 @@ h2 {
     letter-spacing: 1.1px;
 }
 .hero__backdrop {
-    z-index: -3;
-    top:220px;
-    margin:0;
-    left: -10px;
+    top: 300px;
+    width: 100%;
+    overflow: hidden;
     position: absolute;
-    width:520px;
-    height:470px;
+    height: 100vh;
+    object-fit: contain;
     background-size: cover;
-
+    background-position: center center
+}
+.hero__backdrop-img {
+    width: 100%;
+    
 }
 .hero__card {
+    z-index: 3;
     width: 100%;
     background-color: white;
     box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.25);
@@ -133,7 +175,6 @@ h2 {
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
-    min-width: 90%;
 }
 .features__card {
     display: flex;
@@ -141,7 +182,7 @@ h2 {
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
     border-radius: 7px;
     margin-bottom: 20px;
-    max-width: 370px;
+    max-width: 380px;
 }
 .features__card-description {
     padding-right: 30px;
@@ -153,12 +194,78 @@ h2 {
     max-width: 18px;
     margin: 20px 10px 20px 100px;
 }
+.interface__dashboard-img {
+    width:100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.25);
 
-
-
-
-
-
+}
+.products__logo-wrapper {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow:row wrap;
+}
+.products__logo-icon {
+    margin: 20px;
+    width: 25%;
+}
+.products__logo-icon:nth-child(even) {
+    margin-right: 20px;
+}
+.contact__bg {
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    height: 75%;
+    opacity: .2;
+}
+.contact__form {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+input {
+    outline: 0;
+    font-family: 'Futura Heavy';
+    width: 200px;
+    background-color:#a681ff;
+    border: none;
+    border-radius: 34.5px;
+    padding: 5px;
+    padding-left: 15px;
+    color: #ffffff;
+}
+input::placeholder{
+    color: #d2c1ff;
+}
+.contact__form-btn {
+    color:#6235ff;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'Futura Heavy';
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    margin-left: 15px;
+}
+.contact__menu {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-end;
+    text-align: right;
+    padding-top: 200px;
+}
+.contact__menu-item {
+    letter-spacing: 1.1px;
+    font-size: 10px;
+    color: white;
+    font-family: 'Futura Heavy';
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
 
 
 /*Desktop styles*/

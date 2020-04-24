@@ -7,7 +7,11 @@
     <title>Zenith Mockup</title>
 </head>
 <body>
+    <div class="hero__backdrop">
+        <img class="hero__backdrop-img" src="./assets/images/backgrounds/hero-bg-texture.png">
+    </div>
     <div class="container">
+        
 
         <section class ="nav">
             <div class="nav__logo-wrapper">
@@ -30,7 +34,6 @@
 
         <section class="hero">
                 <h1 class="hero__summary">All your communication.<br> One place.</h1>
-        <img class="hero__backdrop" src="./assets/images/backgrounds/hero-bg-texture.png">
             <div class="hero__card">
                 <img class="hero__card-img" src="./assets/images/hero/inbound-card.png" alt="">
             </div>
@@ -60,36 +63,37 @@
             </div>
         </section>
 
-        <section class="interface">
-            <img class="interface__dashboard" src="./assets/images/features/zenith-dasboard.png" alt="">
-        </section>  
+        <div class="interface">
+            <img class="interface__dashboard-img" src="./assets/images/features/zenith-dasboard.png" alt="">
+        </div>  
 
         <section class="products">
             <h2>Your favorite products <br> finally together </h2>
             <div class="products__logo-wrapper">
-                <img class="products__logo-icon"src="./assets/images/integrations/"alt="">
-                <img class="products__logo-icon"src=""alt="">
-                <img class="products__logo-icon"src=""alt="">
-                <img class="products__logo-icon"src=""alt="">
-                <img class="products__logo-icon"src=""alt="">
+                <img class="products__logo-icon"src="./assets/images/integrations/slack-full.png"alt="">
+                <img class="products__logo-icon"src="./assets/images/integrations/trello.png"alt="">
+                <img class="products__logo-icon"src="./assets/images/integrations/google.png"alt="">
+                <img class="products__logo-icon"src="./assets/images/integrations/jira.png"alt="">
+                <img class="products__logo-icon"src="./assets/images/integrations/asana.png"alt="">
             </div>
         </section>
 
         <section class="contact">
             <h3>Stay up to date</h3>
-                <div class="contact__form">
-                    <form>
-                        <input type="text" id="email" name="email" placeholder="Email address">
-                    </form>
-                        <button class="contact__download" type="download" value="Download">Download</button>
-                </div>
-
-                <ul id="contact__menu">
-                    <a href="#"><li>Contact</li></a>
-                    <a href="#"><li>Our Team</li></a>
-                    <a href="#"><li>Policies</li></a>
-                    <a href="#"><li>Privacy & Terms</li></a>
-                </ul>
+            <div class="contact__form">
+                <form>
+                    <input type="text" name="email" placeholder="Email address">
+                </form>
+                <button class="contact__form-btn">Download</button>
+            </div>
+            
+            <ul class="contact__menu">
+                <a href="#"><li class="contact__menu-item">Contact</li></a>
+                <a href="#"><li class="contact__menu-item">Our Team</li></a>
+                <a href="#"><li class="contact__menu-item">Policies</li></a>
+                <a href="#"><li class="contact__menu-item">Privacy & Terms</li></a>
+            </ul>
+            <img class="contact__bg" src="./assets/images/backgrounds/footer-bg-texture.png">
         </section>
 
     </div>
