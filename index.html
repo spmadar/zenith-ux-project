@@ -10,6 +10,10 @@
     <div class="hero__backdrop">
         <img class="hero__backdrop-img" src="./assets/images/backgrounds/hero-bg-texture.png">
     </div>
+    <div class="hero__bg-cards">
+        <img class="hero__bg-cards-img" src="./assets/images/backgrounds/hero-bg-cards.png">
+    </div>
+
     <div class="container">
         
 
@@ -25,18 +29,20 @@
 
             <nav class="nav__menu-list-wrapper">
                 <ul class="nav__menu-list">
-                    <a href="#"><li>Features</li></a>
-                    <a href="#"><li>Integration</li></a>
-                    <a href="#"><li>Get Zenith</li></a>
+                    <a href="#" class="nav__menu-list-item"><li>Features</li></a>
+                    <a href="#" class="nav__menu-list-item"><li>Integration</li></a>
+                    <a href="#"><li class="nav__menu-list-item-btn">Get Zenith</li></a>
                 </ul>
             </nav>
         </section>
 
         <section class="hero">
-                <h1 class="hero__summary">All your communication.<br> One place.</h1>
-            <div class="hero__card">
-                <img class="hero__card-img" src="./assets/images/hero/inbound-card.png" alt="">
-            </div>
+                <h1 class="hero__summary">All your communication. One place.</h1>
+           <div class="hero__card-wrapper">
+               <div class="hero__card">
+                   <img class="hero__card-img" src="./assets/images/hero/inbound-card.png" alt="">
+               </div>
+           </div>     
         </section>
 
         <section class="features">
@@ -63,12 +69,14 @@
             </div>
         </section>
 
-        <div class="interface">
-            <img class="interface__dashboard-img" src="./assets/images/features/zenith-dasboard.png" alt="">
-        </div>  
+        <div class="interface__wrapper">
+            <div class="interface">
+                <img class="interface__dashboard-img" src="./assets/images/features/zenith-dasboard.png" alt="">
+            </div>  
+        </div>
 
         <section class="products">
-            <h2>Your favorite products <br> finally together </h2>
+            <h2 class="products__header">Your favorite products finally together </h2>
             <div class="products__logo-wrapper">
                 <img class="products__logo-icon"src="./assets/images/integrations/slack-full.png"alt="">
                 <img class="products__logo-icon"src="./assets/images/integrations/trello.png"alt="">
