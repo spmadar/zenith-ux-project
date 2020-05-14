@@ -25,7 +25,6 @@ p, a, input, button {
 h1,h2,h3 {
     font-family: 'Futura Heavy';
 }
-
 h2 {
     font-size: 24px;
     margin-bottom: 70px;
@@ -239,7 +238,6 @@ h3 {
     margin-right: 20px;
 }
 .contact__bg {
-    
     z-index: -1;
     width: 100%;
     position: absolute;
@@ -291,8 +289,6 @@ input::placeholder{
     margin-bottom: 15px;
     text-transform: uppercase;
 }
-
-
 /*Desktop styles*/
 @media only screen and (min-width: 767px) {
     .nav__hamburger-wrapper{
@@ -420,7 +416,6 @@ input::placeholder{
     input {
         width: 300px;
     }
-    
     .contact__menu-item {
         font-size: 14px;
         margin-bottom: 10px;
