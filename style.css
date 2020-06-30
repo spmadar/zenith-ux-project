@@ -72,12 +72,12 @@ h3 {
     display: flex;
     flex-flow: column nowrap;
     width: 90%;
-    margin-bottom: 350px;
+    margin-bottom: 50px;
 }
 .features {
-    height: 100vh;
+    height: 80vh;
     background-color: #fff;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -85,8 +85,8 @@ h3 {
 }
 .interface {
     width: 90%;
-    height: 100vh;
-    margin-bottom: 50px;
+    height: 40vh;
+    margin-bottom: 100px;
 }
 .products {
     display: flex;
@@ -155,7 +155,7 @@ h3 {
     top: 300px;
     width: 100%;
     position: absolute;
-    height: 100vh;
+    height: 90vh;
     object-fit: contain;
     background-size: cover;
     background-position: center center
@@ -186,15 +186,16 @@ h3 {
 }
 .features__card-wrapper {
     display: flex;
+    flex-direction: column;
+    width: 100%;
     justify-content: center;
-    flex-flow: column wrap;
 }
 .features__card {
     display: flex;
     font-weight: 500;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
     border-radius: 7px;
-    margin-bottom: 20px;
+    margin: 0px 5px 30px 5px;
     max-width: 380px;
 }
 .features__card-description {
@@ -202,6 +203,7 @@ h3 {
     word-wrap: break-word;
     padding: 30px 10px 20px 20px;
     max-width: 220px;
+    min-width: 200px;
 }
 .features__card-img {
     max-width: 18px;
@@ -222,6 +224,7 @@ h3 {
 .products__header {
     letter-spacing: 1px;
     max-width: 300px;
+    margin-top: 60px;
 }
 .products__logo-wrapper {
     max-width: 100%;
@@ -332,10 +335,12 @@ input::placeholder{
     }
     .hero {
         width: 80%;
+        height:60vh;
     }
     .features {
-        width: 90%;
-        margin-top:-300px;
+        min-width: 90%;
+        height: 80vh;
+        
     }
     .features__header {
         max-width: 600px;
@@ -345,16 +350,30 @@ input::placeholder{
     .features__card-wrapper {
         display: flex;
         flex-flow: row nowrap;
-        margin-left: 40px;;
+        width: 80%;
+        justify-content: center;
+        margin: 0px 10px 0px 10px;
+   
     }
     .features__card {
-        margin-top: 20px;
-        margin-right: 50px;
+        min-width: 220px;
+        max-width: 600px;
+        margin:0px 0px 10px 0px;
+       
+    }
+    .features__card:nth-child(2) {
+        margin: 0px 30px 10px 30px;
     }
     .features__card-img {
-        margin-left: 10px;
-        max-height: 60px;
-        max-width: 25px
+        margin: 20px 40px 25px 0px;
+        max-height: 55px;
+        max-width: 20px;
+        min-width: 16px;
+    }
+    .features__card-description {
+        padding: 30px 0px 20px 15px;
+        min-width: 200px;
+        max-width: 225px;
     }
     .interface__wrapper {
         display: flex;
@@ -364,11 +383,11 @@ input::placeholder{
         border-radius: 50px;
     }
     .interface {
+        height: 80vh;
         max-width: 900px;
         background-color: transparent;
         border-radius: 50px;
         width: 90%;
-        height: 100vh;
         margin-bottom: 50px;
     }
     .interface__dashboard-img {
@@ -396,6 +415,7 @@ input::placeholder{
         flex-flow: row nowrap;
         justify-content: center;
         max-width: 50%;
+        margin-right: 30px;
     }
     .contact {
         background: linear-gradient(203.67deg, #AB00FF -21.91%, #007BFF 133.89%);
