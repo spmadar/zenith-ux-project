@@ -41,7 +41,6 @@ h3 {
     text-align: center;
     margin-top:50px;
     margin-bottom: 40px;
-
 }
 @font-face {
     font-family: 'Futura Book';
@@ -89,6 +88,7 @@ h3 {
     margin-bottom: 100px;
 }
 .products {
+    margin-top: 100px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -343,6 +343,7 @@ input::placeholder{
         
     }
     .features__header {
+        margin-top: 200px;
         max-width: 600px;
         font-size: 48px;
         letter-spacing: 1px;
